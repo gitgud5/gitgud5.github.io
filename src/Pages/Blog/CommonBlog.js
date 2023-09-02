@@ -3,7 +3,7 @@ import Footer from "../../Share/Footer";
 import UseData from "../../Hooks/UseData";
 import { BsXCircle } from "react-icons/bs";
 import Modal from "react-modal";
-import user from "../../assets/images/about/about.jpg";
+import user from "../../assets/images/about/about.png";
 import {
   FaDribbble,
   FaFacebookF,
@@ -31,7 +31,7 @@ const CommonBlog = ({ items, count }) => {
           <div className="container px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
               {/* Blog page title */}
-              <h2 className="after-effect after:left-32 mt-12 lg:mt-0">
+              <h2 className="mt-12 after-effect after:left-32 lg:mt-0">
                 Blogs
               </h2>
               <div
@@ -56,7 +56,7 @@ const CommonBlog = ({ items, count }) => {
                       <div className="overflow-hidden rounded-lg">
                         <img
                           onClick={() => handleModle(item?.id)}
-                          className="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                          className="w-full transition duration-200 ease-in-out transform rounded-lg cursor-pointer hover:scale-110"
                           src={item?.imgSmall}
                           alt="blog"
                         />
@@ -84,7 +84,7 @@ const CommonBlog = ({ items, count }) => {
             <Modal
               isOpen={isOpen}
               onRequestClose={() => setIsOpen(false)}
-              className="outline-none flex items-center p-4 md:p-8  rounded-2xl my-8"
+              className="flex items-center p-4 my-8 outline-none md:p-8 rounded-2xl"
             >
               <div className=" w-full  md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
                 <div
@@ -92,23 +92,23 @@ const CommonBlog = ({ items, count }) => {
                     local === "dark" ? "scrollbarDark" : "scrollbarLight"
                   } overflow-y-scroll max-h-[80vh] `}
                 >
-                  <div className="pr-3 pb-2">
+                  <div className="pb-2 pr-3">
                     <BsXCircle
                       onClick={() => setIsOpen(false)}
-                      className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
+                      className="absolute text-white transition duration-300 ease-in-out transform cursor-pointer text-7xl right-2 -top-12 md:-right-10 md:-top-6 hover:rotate-45 "
                     />
                     <img
                       className=" w-full md:h-[450px]  object-cover rounded-xl mt-6"
                       src={singleData.img}
                       alt="blog"
                     />
-                    <div className="flex mt-4 text-tiny text-black dark:text-white">
+                    <div className="flex mt-4 text-black text-tiny dark:text-white">
                       <span>{singleData?.date}</span>
                       <span className="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
                         {singleData?.category}
                       </span>
                     </div>
-                    <h2 className="dark:text-white sm:text-3xl mt-2 font-medium">
+                    <h2 className="mt-2 font-medium dark:text-white sm:text-3xl">
                       {singleData.title}
                     </h2>
                     {blogDescriptionSplit?.map((item, j) => (
@@ -132,7 +132,7 @@ const CommonBlog = ({ items, count }) => {
                         />
                       </div>
                       <div className="pl-5">
-                        <div className="flex justify-between items-center">
+                        <div className="flex items-center justify-between">
                           <h3 className="dark:text-white text-[22px] font-medium">
                             Rafia Ana
                           </h3>{" "}
@@ -140,7 +140,7 @@ const CommonBlog = ({ items, count }) => {
                             15 min ago
                           </span>
                         </div>
-                        <p className="dark:text-white  md:pr-16">
+                        <p className="dark:text-white md:pr-16">
                           Lorem, ipsum dolor sit amet consectetur adipisicing
                           elit. Sequi nam ad, unde vel aut soluta atque
                           consequatur. Omnis, debitis nihil?
@@ -154,11 +154,11 @@ const CommonBlog = ({ items, count }) => {
                   {/* End Comment show Section */}
 
                   {/* Start Social Share */}
-                  <div className="flex items-center md:justify-end space-x-4 mt-8 mr-3">
+                  <div className="flex items-center mt-8 mr-3 space-x-4 md:justify-end">
                     <h6 className="dark:text-white text-[20px] ">
                       Login with:
                     </h6>
-                    <div className="flex  space-x-3">
+                    <div className="flex space-x-3">
                       {/* facebook link add here */}
                       <a
                         href="https://www.facebook.com/"
@@ -205,7 +205,7 @@ const CommonBlog = ({ items, count }) => {
 
                   {/* Start Comment Box */}
                   <div className="pt-3">
-                    <div className=" pr-3 pb-4">
+                    <div className="pb-4 pr-3 ">
                       <form className="w-full ">
                         <label className="block mb-2">
                           <span className="dark:text-white text-[25px] font-medium  ">

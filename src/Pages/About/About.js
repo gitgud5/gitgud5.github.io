@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import aboutImage from "../../assets/images/about/about.jpg";
+import aboutImage from "../../assets/images/about/about.png";
 import "../../Share/Style.css";
 import Footer from "../../Share/Footer";
 import UseData from "../../Hooks/UseData";
@@ -67,7 +67,7 @@ const About = () => {
                     <h3 className="my-5 text-4xl font-medium dark:text-white">
                       Personal Info
                     </h3>
-                    <div className="grid grid-cols-1 gap-6  sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                       <div className="flex">
                         <span className="text-oriange dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-">
                           <FaMobileAlt />
