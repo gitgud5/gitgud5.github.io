@@ -34,27 +34,6 @@ const HomeCard = () => {
           {/* Social Links */}
 
           <div className="flex justify-center space-x-3">
-            {/* facebook link here */}
-            {/* <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="socialbtn text-[#1773EA]">
-                <FaFacebookF />
-              </span>
-            </a> */}
-            {/* twitter link here */}
-            {/* <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="socialbtn text-[#1C9CEA]">
-                <FaTwitter />
-              </span>
-            </a> */}
-            {/* github link here */}
             <a
               href="https://dribbble.com/"
               target="_blank"
