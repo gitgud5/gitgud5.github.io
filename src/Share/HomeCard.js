@@ -35,7 +35,7 @@ const HomeCard = () => {
 
           <div className="flex justify-center space-x-3">
             <a
-              href="https://dribbble.com/"
+              href="https://github.com/gitgud5/"
               target="_blank"
               rel="noopener noreferrer"
             >
