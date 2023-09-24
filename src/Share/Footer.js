@@ -1,8 +1,10 @@
 import React from "react";
 import UseData from "../Hooks/UseData";
+import useCurrentYear from "../Hooks/useCurrentYear";
 
 const Footer = ({ bg, condition }) => {
   const { local } = UseData();
+  const currentYear = useCurrentYear();
   return (
     <footer
       style={{
@@ -13,7 +15,7 @@ const Footer = ({ bg, condition }) => {
       className="overflow-hidden rounded-b-2xl"
     >
       <p className="py-6 text-center text-gray-lite dark:text-color-910 ">
-        © 2022 All Rights Reserved by{" "}
+        {`© ${currentYear} All Rights Reserved by `}
         <a
           className="hover:text-[#FA5252] duration-300 transition"
           href="https://github.com/gitgud5/"

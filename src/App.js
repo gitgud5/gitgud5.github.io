@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import ContextProvider from "./Context/ContextProvider";
 import AboutTwo from "./Pages/About/AboutTwo";
-import BlogTwo from "./Pages/Blog/BlogTwo";
+// import BlogTwo from "./Pages/Blog/BlogTwo";
 import ContactTwo from "./Pages/Contact/ContactTwo";
 import HomeTwo from "./Pages/Home/HomeTwo";
 import PortfiloTwo from "./Pages/Portfilo/PortfiloTwo";

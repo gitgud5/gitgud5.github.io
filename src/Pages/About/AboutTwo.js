@@ -2,7 +2,7 @@ import React from "react";
 import UseData from "../../Hooks/UseData";
 import Footer from "../../Share/Footer";
 import "../../Share/Style.css";
-import SliderCommon from "../../Share/SliderCommon";
+// import SliderCommon from "../../Share/SliderCommon";
 import AboutCard from "./AboutCard";
 import HomeCard from "../../Share/HomeCard";
 import PageTitle from "../../Share/PageTitle";

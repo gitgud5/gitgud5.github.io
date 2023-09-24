@@ -36,7 +36,6 @@ import icon4 from "../assets/images/icons/icon-5.svg";
 // contact image
 import { CgNotes } from "react-icons/cg";
 import { FaBlogger, FaRegUser } from "react-icons/fa";
-import { AiOutlineHome } from "react-icons/ai";
 import { FiCodesandbox } from "react-icons/fi";
 import { RiContactsBookLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
@@ -236,46 +235,6 @@ const AllData = () => {
     },
   ];
 
-  // Menu items for Homepage One
-  const menuItem = [
-    {
-      id: "01",
-      name: "Home",
-      link: "/home/homePage",
-      icon: <AiOutlineHome />,
-    },
-    {
-      id: "02",
-      name: "About",
-      link: "/home/about",
-      icon: <FaRegUser />,
-    },
-    {
-      id: "06",
-      name: "Resume",
-      link: "/home/resume",
-      icon: <CgNotes />,
-    },
-    {
-      id: "03",
-      name: "Works",
-      link: "/home/works",
-      icon: <FiCodesandbox />,
-    },
-    // {
-    //   id: "04",
-    //   name: "Blogs",
-    //   link: "/home/blogs",
-    //   icon: <FaBlogger />,
-    // },
-    {
-      id: "05",
-      name: "Contact",
-      link: "/home/contact",
-      icon: <RiContactsBookLine />,
-    },
-  ];
-
   // Menu items for Homepage Two
   const menuItemTwo = [
     {
@@ -396,32 +355,6 @@ const AllData = () => {
       bg: "#EEF5FA",
     },
   ];
-  // awardsArray items for Resume page
-  const awardsArray = [
-    {
-      id: 1,
-      date: "2015-2017",
-      title: "  Graphic Designer",
-      place: "Web Graphy, Los Angeles, CA",
-      bg: "#FCF4FF",
-    },
-
-    {
-      id: 2,
-      date: "2014 - 2015",
-      title: "Jr. Web Developer",
-      place: "Creative Gigs.",
-      bg: "#FCF9F2",
-    },
-
-    {
-      id: 3,
-      date: "2015-2017",
-      title: "Best Freelancer",
-      place: "Fiver & Upwork Level 2 & Top Rated",
-      bg: "#FCF4FF",
-    },
-  ];
 
   // Working Skills items for Resume page
   const lineArray = [
@@ -451,33 +384,6 @@ const AllData = () => {
     },
   ];
 
-  // Personal information for contact pages
-  // const contactArray = [
-  //   {
-  //     id: "01",
-  //     icon: iconPhone,
-  //     title: "Phone ",
-  //     item1: "+452 666 386",
-  //     item2: "+452 666 386",
-  //     bg: "#FCF4FF",
-  //   },
-  //   {
-  //     id: "02",
-  //     icon: iconEmail,
-  //     title: "Email ",
-  //     item1: "support@gmail.com",
-  //     item2: "example@gmail.com",
-  //     bg: "#EEFBFF",
-  //   },
-  //   {
-  //     id: "03",
-  //     icon: iconMap,
-  //     title: "Address ",
-  //     item1: "Maount View, Oval",
-  //     item2: "Road, New York, USA",
-  //     bg: "#F2F4FF",
-  //   },
-  // ];
 
   return {
     handleTheme,
@@ -491,14 +397,12 @@ const AllData = () => {
     setIsOpen,
     blogsData,
     handleBlogsData,
-    menuItem,
     NavLink,
     menuItemTwo,
     serviceArray,
     sliderImg,
     educationArray,
     experiencesArray,
-    awardsArray,
     lineArray,
   };
 };

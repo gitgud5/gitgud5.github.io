@@ -34,7 +34,7 @@ const HomeCard = () => {
 
           <div className="flex justify-center space-x-3">
             {/* facebook link add here */}
-            <a
+            {/* <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,9 +42,9 @@ const HomeCard = () => {
               <span className="socialbtn text-[#1773EA]">
                 <FaFacebookF />
               </span>
-            </a>
+            </a> */}
             {/* twitter link add here */}
-            <a
+            {/* <a
               href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,9 +52,9 @@ const HomeCard = () => {
               <span className="socialbtn text-[#1C9CEA]">
                 <FaTwitter />
               </span>
-            </a>
+            </a> */}
             {/* drop link add here */}
-            <a
+            {/* <a
               href="https://dribbble.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const HomeCard = () => {
               <span className="socialbtn text-[#e14a84] ">
                 <FaDribbble />
               </span>
-            </a>
+            </a> */}
             {/* linkedin link add here */}
             <a
               href="https://www.linkedin.com/in/muhammad-umar-42828b219/"
