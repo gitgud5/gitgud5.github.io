@@ -6,14 +6,16 @@ const ResumeCardTwo = () => {
   const { educationArray, experiencesArray } = UseData();
   const { local } = UseData();
 
+  const reverseExperiencesArray = [...experiencesArray].reverse()
+
   return (
     <>
       <div>
-        <div className="flex items-center space-x-2 mb-4">
+        <div className="flex items-center mb-4 space-x-2">
           <div className="text-6xl text-[#F95054]">
             <MdOutlineBusinessCenter />
           </div>
-          <h4 className="text-5xl dark:text-white font-medium"> Education </h4>
+          <h4 className="text-5xl font-medium dark:text-white"> Education </h4>
         </div>
         {/* end flex */}
 
@@ -36,14 +38,14 @@ const ResumeCardTwo = () => {
 
       <div>
         {/* <!-- Experience contain --> */}
-        <div className="flex items-center space-x-2 mb-4">
+        <div className="flex items-center mb-4 space-x-2">
           <div className="text-6xl text-[#F95054]">
             <MdOutlineSchool />
           </div>
-          <h4 className="text-5xl dark:text-white font-medium"> Experience </h4>
+          <h4 className="text-5xl font-medium dark:text-white"> Experience </h4>
         </div>
 
-        {experiencesArray.map((item) => (
+        {reverseExperiencesArray.map((item) => (
           <div
             className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2"
             style={{

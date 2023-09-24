@@ -85,10 +85,11 @@ const AboutTwo = () => {
           </div>
           {/* service provide end */}
 
-          <div className="px-2 sm:px-5 md:px-10 lg:px-14 ">
-            {/* Slick Slider call here  */}
-            <SliderCommon />
-          </div>
+          {/* REMEMEBER to add clients here when I have some clients XD */}
+          {/* <div className="px-2 sm:px-5 md:px-10 lg:px-14 "> */}
+          {/* Slick Slider call here  */}
+          {/* <SliderCommon /> */}
+          {/* </div> */}
 
           {/* Common Footer call here */}
           <Footer bg={"#FFFF"} />

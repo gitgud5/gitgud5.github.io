@@ -50,7 +50,7 @@ const CommonPortfilo = ({ condition, items }) => {
         <div data-aos="fade">
           <div className="container mb-8   px-4 sm:px-5 md:px-10 lg:px-[60px]">
             <div className="py-12">
-              <h2 className="after-effect  after:left-48 mt-12  lg:mt-0">
+              <h2 className="mt-12 after-effect after:left-48 lg:mt-0">
                 Portfolio
               </h2>
 
@@ -123,10 +123,10 @@ const CommonPortfilo = ({ condition, items }) => {
                   className="rounded-lg p-6 dark:border-[2px] border-[#212425]"
                   key={item.id}
                 >
-                  <div className=" overflow-hidden rounded-lg">
+                  <div className="overflow-hidden rounded-lg ">
                     <img
                       onClick={() => handleModle(item.id)}
-                      className="w-full    cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto "
+                      className="w-full h-auto transition duration-200 ease-in-out transform rounded-lg cursor-pointer hover:scale-110 "
                       src={item?.imgSmall}
                       alt=""
                     />
@@ -151,27 +151,27 @@ const CommonPortfilo = ({ condition, items }) => {
             <Modal
               isOpen={isOpen}
               onRequestClose={() => setIsOpen(false)}
-              className=" outline-none flex items-center  p-4 md:p-8  rounded-2xl my-8"
+              className="flex items-center p-4 my-8 outline-none md:p-8 rounded-2xl"
             >
               <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
                 <div className=" overflow-y-scroll max-h-[80vh] no-scrollbar ">
                   {/* close button */}
                   <BsXCircle
                     onClick={() => setIsOpen(false)}
-                    className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
+                    className="absolute z-50 text-white transition duration-300 ease-in-out transform cursor-pointer text-7xl right-2 -top-12 md:-right-10 md:-top-6 hover:rotate-45 "
                   />
                   <h2 className="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
                     {singleData.tag} Project
                   </h2>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 my-6">
+                  <div className="grid grid-cols-1 my-6 lg:grid-cols-2">
                     <div className="space-y-2">
                       <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
-                        <FiFilePlus className="sm:text-lg hidden sm:block mr-2  md:text-xl" />
+                        <FiFilePlus className="hidden mr-2 sm:text-lg sm:block md:text-xl" />
                         Project :&nbsp;{" "}
                         <span className="font-medium "> Website</span>
                       </p>
                       <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
-                        <FiCode className="text-lg mr-2 hidden sm:block " />
+                        <FiCode className="hidden mr-2 text-lg sm:block " />
                         Langages :&nbsp;
                         <span className="font-medium ">
                           {singleData?.langages}
@@ -180,14 +180,14 @@ const CommonPortfilo = ({ condition, items }) => {
                     </div>
                     <div className="space-y-2">
                       <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px]  sm:text-lg ">
-                        <FiUser className="text-lg mr-2 hidden sm:block" />
+                        <FiUser className="hidden mr-2 text-lg sm:block" />
                         Client :&nbsp;
                         <span className="font-medium ">
                           {singleData?.client}
                         </span>
                       </p>
                       <p className="dark:text-white flex items-center text-[15px] sm:text-lg ">
-                        <FiExternalLink className="text-lg mr-2 hidden sm:block" />
+                        <FiExternalLink className="hidden mr-2 text-lg sm:block" />
                         Preview :&nbsp;
                         <span className="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060] ">
                           <a

@@ -1,24 +1,12 @@
 import { useEffect, useState } from "react";
 // for work_images
-import work1 from "../assets/images/work_images/1.jpg";
+import work1 from "../assets/images/work_images/lumbarfy.png";
 import work2 from "../assets/images/work_images/2.jpg";
-import work3 from "../assets/images/work_images/3.jpg";
-import work4 from "../assets/images/work_images/4.jpg";
-import work5 from "../assets/images/work_images/5.jpg";
-import work6 from "../assets/images/work_images/6.jpg";
-import work7 from "../assets/images/work_images/7.jpg";
-import work8 from "../assets/images/work_images/8.jpg";
-import work9 from "../assets/images/work_images/9.jpg";
+// import work3 from "../assets/images/work_images/3.jpg";
 // works small images
-import workSmall1 from "../assets/images/work_images/small/1.jpg";
+import workSmall1 from "../assets/images/work_images/small/lumbarfy-small.png";
 import workSmall2 from "../assets/images/work_images/small/2.jpg";
-import workSmall3 from "../assets/images/work_images/small/3.jpg";
-import workSmall4 from "../assets/images/work_images/small/4.jpg";
-import workSmall5 from "../assets/images/work_images/small/5.jpg";
-import workSmall6 from "../assets/images/work_images/small/6.jpg";
-import workSmall7 from "../assets/images/work_images/small/7.jpg";
-import workSmall8 from "../assets/images/work_images/small/8.jpg";
-import workSmall9 from "../assets/images/work_images/small/9.jpg";
+// import workSmall3 from "../assets/images/work_images/small/3.jpg";
 // blog post images
 import blog6 from "../assets/images/blog_images/6.jpg";
 import blog4 from "../assets/images/blog_images/4.jpg";
@@ -45,7 +33,6 @@ import icon1 from "../assets/images/icons/icon-2.svg";
 import icon2 from "../assets/images/icons/icon-3.svg";
 import icon3 from "../assets/images/icons/icon-4.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
-import icon5 from "../assets/images/icons/icon-6.svg";
 // contact image
 import iconPhone from "../assets/images/contact/phone-call 1.png";
 import iconEmail from "../assets/images/contact/email 1.png";
@@ -139,17 +126,17 @@ const AllData = () => {
   const workItems = [
     {
       id: "1",
-      tag: "MERN stack with ML",
+      tag: "MERN",
       title: "Lumbarfy",
       img: work1,
       imgSmall: workSmall1,
       bg: "#FFF0F0",
-      client: "Comsats",
+      client: "Comsats University Islamabad",
       langages: "JavaScript, Python",
       // link: "https://www.envato.com",
-      // linkText: "www.envato.com",
+      linkText: "Not live anymore",
       description:
-      "My final year project. Just change the description from the AllData.js file."
+        "My final year project. Used to diagnose MRI images of patients and generate them a report.",
     },
     {
       id: "2",
@@ -165,104 +152,20 @@ const AllData = () => {
       description:
         "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
     },
-    {
-      id: "3",
-      tag: "Logo",
-      title: "Chul urina",
-      img: work3,
-      imgSmall: workSmall3,
-      bg: "#FFF0F0",
-      client: "Freepik",
-      langages: "Illustrator",
-      link: "https://www.freepik.com/free-photos-vectors/market-logo",
-      linkText: "www.freepik.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "4",
-      tag: "Video",
-      title: "Chul urina",
-      img: work4,
-      imgSmall: workSmall4,
-      bg: "#E9FAFF",
-      client: "Envato",
-      langages: "After Effect",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "5",
-      tag: "UI/UX",
-      title: "Chul urina",
-      img: work5,
-      imgSmall: workSmall5,
-      bg: "#FFFAE9",
-      client: "Envato",
-      langages: "Photoshop",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "6",
-      tag: "Video",
-      title: "Chul urina",
-      img: work6,
-      imgSmall: workSmall6,
-      bg: "#F4F4FF",
-      client: "Envato",
-      langages: "Vimeo",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "7",
-      tag: "UI/UX",
-      title: "Chul urina",
-      img: work7,
-      imgSmall: workSmall7,
-      bg: "#FFF0F8",
-      client: "Envato",
-      langages: "Photoshop",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "8",
-      tag: "Web Design",
-      title: "Chul urina",
-      img: work8,
-      imgSmall: workSmall8,
-      bg: "#FFF0F8",
-      client: "Envato",
-      langages: "HTML, CSS, Javascript",
-      link: "https://www.envato.com",
-      linkText: "www.envato.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
-    {
-      id: "9",
-      tag: "Logo",
-      title: "Chul urina",
-      img: work9,
-      imgSmall: workSmall9,
-      bg: "#FCF4FF",
-      client: "Feepik",
-      langages: "Figma",
-      link: "https://www.freepik.com/free-photos-vectors/market-logo",
-      linkText: "www.freepik.com",
-      description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
-    },
+    // {
+    //   id: "3",
+    //   tag: "Logo",
+    //   title: "Chul urina",
+    //   img: work3,
+    //   imgSmall: workSmall3,
+    //   bg: "#FFF0F0",
+    //   client: "Freepik",
+    //   langages: "Illustrator",
+    //   link: "https://www.freepik.com/free-photos-vectors/market-logo",
+    //   linkText: "www.freepik.com",
+    //   description:
+    //     "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
+    // },
   ];
   const [data, setData] = useState(workItems);
 
@@ -429,50 +332,42 @@ const AllData = () => {
     {
       id: "1",
       icon: icon,
-      title: "Ui/Ux Design",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
+      title: "Frontend Development",
+      des: "Building dynamic, responsive web applications from scratch and enhance existing apps.",
       color: "#D566FF",
       bg: "#FCF4FF",
     },
     {
       id: "2",
       icon: icon1,
-      title: "App Development",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
+      title: "Backend Development",
+      des: "Developing robust server-side applications using Node.js and Express.js. Designing and implementing RESTful or GraphQL APIs.",
       color: "#DDA10C",
       bg: "#FEFAF0",
     },
     {
       id: "3",
       icon: icon2,
-      title: "Photography",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
+      title: "Database Management",
+      des: "Setting up and managing databases, including MongoDB, MySQL, or PostgreSQL. Designing efficient database schemas and optimizing queries.",
       color: "#8774FF",
       bg: "#FCF4FF",
     },
     {
       id: "4",
       icon: icon3,
-      title: "Photography",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
+      title: "Authentication and Authorization",
+      des: "Implementing user authentication systems using OAuth, JWT, or other methods. Configuring role-based access control (RBAC) for user permissions.",
       color: "#FF6080",
       bg: "#FFF4F4",
     },
     {
       id: "5",
       icon: icon4,
-      title: "Managment",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
+      title: "API Integration",
+      des: "Connecting to third-party APIs to fetch and display data within web applications. Developing custom APIs for clients or partners.",
       color: "#FF75D8",
       bg: "#FFF0F8",
-    },
-    {
-      id: "6",
-      icon: icon5,
-      title: "Web Development",
-      des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
-      color: "#269FFF",
-      bg: "#F3FAFF",
     },
   ];
 
@@ -480,51 +375,27 @@ const AllData = () => {
   const educationArray = [
     {
       id: 1,
-      date: "2021-2023",
-      title: "Ph.D in Horriblensess ",
-      place: "ABC University, Los Angeles, CA",
-      bg: "#FFF4F4",
-    },
-
-    {
-      id: 2,
-      date: "2019 - Present",
-      title: "Sr. Software Tester",
-      place: "Google Inc.",
-      bg: "#FFF1FB",
-    },
-
-    {
-      id: 3,
-      date: "2021",
-      title: "Best Developer ",
-      place: "University Of Melbourne, NA",
+      date: "2018-2022",
+      title: "Bachelor of Science in Computer Science",
+      place: "COMSATS University Islamabad (CUI)",
       bg: "#FFF4F4",
     },
   ];
   // experiencesArray items for Resume page
+  // Change some code so I can easily display experiences in reverse order where the array is being rendered.
   const experiencesArray = [
     {
       id: 1,
-      date: "2017-2021",
-      title: "Computer Science",
-      place: "Imperialize Technical Institute",
-      bg: "#EEF5FA",
-    },
-
-    {
-      id: 2,
-      date: "2015-2017",
-      title: "Cr. Web Developer",
-      place: "ib-themes ltd.",
+      date: "March 2023 - July 2023",
+      title: "MERN Stack Developer",
+      place: "Globewyze Inc.",
       bg: "#F2F4FF",
     },
-
     {
-      id: 3,
-      date: "2008",
-      title: "Best Writter",
-      place: "Online Typodev Soluation Ltd.",
+      id: 2,
+      date: "September 2023 - Present",
+      title: "Assosiate Software Engineer",
+      place: "Volmatica Inc.",
       bg: "#EEF5FA",
     },
   ];
@@ -560,26 +431,26 @@ const AllData = () => {
     {
       id: "01",
       color: "#FF6464",
-      name: "Web Design",
-      number: "80",
+      name: "JavaScript",
+      number: "90",
     },
     {
       id: "02",
       color: "#9272D4",
-      name: "Mobile App ",
-      number: "95",
+      name: "MERN",
+      number: "80",
     },
     {
       id: "03",
       color: "#5185D4",
-      name: "Illustrator",
-      number: "65",
+      name: "TailwindCSS",
+      number: "75",
     },
     {
       id: "03",
       color: "#CA56F2",
-      name: "Photoshope",
-      number: "75",
+      name: "DataBase",
+      number: "70",
     },
   ];
 
