@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,14 +8,17 @@ const CommonContact = ({ condition }) => {
 
   // use Email js for recive message
 
+  const [sending, setSending] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true);
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_uvz7n0i",
+        "template_mqxflzx",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "el4ccl92G-0yhCQx_"
       )
       .then(
         (result) => {
@@ -29,6 +32,7 @@ const CommonContact = ({ condition }) => {
             progress: undefined,
           });
           document.getElementById("myForm").reset();
+          setSending(sending);
         },
         (error) => {
           toast.error("Ops Message not Sent!", {
@@ -40,6 +44,7 @@ const CommonContact = ({ condition }) => {
             draggable: true,
             progress: undefined,
           });
+          setSending(sending);
         }
       );
   };
@@ -53,13 +58,13 @@ const CommonContact = ({ condition }) => {
           : "  dark:border-[#212425] dark:border-2 mb-16  md:p-[48px]  p-4  "
       } bg-color-810 rounded-xl dark:bg-[#111111] mb-[30px] md:mb-[60px]`}
     >
-      <h3 className="text-4xl  ">
+      <h3 className="text-4xl ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
           I'm always open to discussing product
         </span>
         <br />
         <span className="font-semibold dark:text-white">
-          design work or partnerships.
+          app development and technology.
         </span>
       </h3>
 
@@ -72,6 +77,7 @@ const CommonContact = ({ condition }) => {
             className="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#FF6464] peer"
             placeholder=" "
             required
+            disabled={sending}
           />
           <label
             htmlFor="name"
@@ -87,6 +93,7 @@ const CommonContact = ({ condition }) => {
             className="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
             placeholder=" "
             id="user_email"
+            disabled={sending}
             required
           />
           <label
@@ -103,6 +110,7 @@ const CommonContact = ({ condition }) => {
             className="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
             placeholder=" "
             id="message"
+            disabled={sending}
             required
           />
           <label
@@ -117,6 +125,7 @@ const CommonContact = ({ condition }) => {
           <input
             type="submit"
             className=" transition ease-in duration-200 font-semibold cursor-pointer border-color-910   hover:border-transparent px-6  py-2 rounded-lg border-[2px]  hover:text-white   dark:text-white "
+            disabled={sending}
             value="Submit"
           />
         </div>

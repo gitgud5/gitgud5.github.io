@@ -41,6 +41,8 @@ const CommonPortfilo = ({ condition, items }) => {
     500: 1,
   };
 
+  const filterOptions = ["All", "MERN"];
+
   return (
     <>
       <PageTitle title="Portfolio"></PageTitle>
@@ -61,46 +63,17 @@ const CommonPortfilo = ({ condition, items }) => {
                   item === 2 ? "mt-[30px] " : "mt-[40px]"
                 } flex w-full justify-start md:justify-end  flex-wrap   font-medium`}
               >
-                <li
-                  className={`${
-                    test === "All" ? "text-[#FA5252]" : "fillter-btn "
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("All")}
-                >
-                  All
-                </li>
-                <li
-                  className={`${
-                    test === "Video" ? "text-[#FA5252]" : "fillter-btn"
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Video")}
-                >
-                  Video
-                </li>
-                <li
-                  className={`${
-                    test === "Web Design" ? "text-[#FA5252]" : "fillter-btn"
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Web Design")}
-                >
-                  Web Design
-                </li>
-                <li
-                  className={`${
-                    test === "Logo" ? "text-[#FA5252]" : "fillter-btn ml-0"
-                  } mr-4 md:mx-4`}
-                  onClick={() => handleSearch("Logo")}
-                >
-                  Logo
-                </li>
-                <li
-                  className={`${
-                    test === "UI/UX" ? "text-[#FA5252]" : "fillter-btn"
-                  }  `}
-                  onClick={() => handleSearch("UI/UX")}
-                >
-                  Graphic Design
-                </li>
+                {filterOptions.map((option) => (
+                  <li
+                    key={option}
+                    className={`${
+                      test === option ? "text-[#FA5252]" : "fillter-btn"
+                    } ${option === "Logo" ? "ml-0" : "mr-4 md:mx-4"}`}
+                    onClick={() => handleSearch(option)}
+                  >
+                    {option}
+                  </li>
+                ))}
               </ul>
 
               {/* Portfilo fillter tab start */}

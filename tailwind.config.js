@@ -39,7 +39,6 @@ module.exports = {
         homeBg: "url('/src/assets/images/background/bg.jpg')",
         "homeBg-dark": "url('/src/assets/images/background/bg-dark.jpg')",
         "homeTwoBg-dark": "url('/src/assets/images/background/bgtwo.jpg')",
-        previewBg: "url('/src/assets/images/preview/previewbg.png')",
       },
       colors: {
         gray: "#F3F6F6",

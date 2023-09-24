@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 // for work_images
 import work1 from "../assets/images/work_images/lumbarfy.png";
-import work2 from "../assets/images/work_images/2.jpg";
+import work2 from "../assets/images/work_images/skillgigs.png";
 // import work3 from "../assets/images/work_images/3.jpg";
 // works small images
 import workSmall1 from "../assets/images/work_images/small/lumbarfy-small.png";
-import workSmall2 from "../assets/images/work_images/small/2.jpg";
+import workSmall2 from "../assets/images/work_images/small/skillgigs-small.png";
 // import workSmall3 from "../assets/images/work_images/small/3.jpg";
 // blog post images
 import blog6 from "../assets/images/blog_images/6.jpg";
@@ -34,9 +34,6 @@ import icon2 from "../assets/images/icons/icon-3.svg";
 import icon3 from "../assets/images/icons/icon-4.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
 // contact image
-import iconPhone from "../assets/images/contact/phone-call 1.png";
-import iconEmail from "../assets/images/contact/email 1.png";
-import iconMap from "../assets/images/contact/map 1.png";
 import { CgNotes } from "react-icons/cg";
 import { FaBlogger, FaRegUser } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
@@ -140,17 +137,17 @@ const AllData = () => {
     },
     {
       id: "2",
-      tag: "Web Design",
-      title: "Aura Dione",
+      tag: "MERN",
+      title: "SkillGigs",
       img: work2,
       imgSmall: workSmall2,
       bg: "#FFF3FC",
-      client: "Themeforest",
-      langages: "HTML, CSS, Javascript",
-      link: "https://www.themeforest.net",
-      linkText: "themeforest.net",
+      client: "GlobeWyze Inc.",
+      langages: "JavaScript",
+      link: "https://skillgigs.com/",
+      linkText: "Skillgigs link",
       description:
-        "  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure.",
+        "Worked as a maintainer of the web application for both the front-end and the back-end.",
     },
     // {
     //   id: "3",
@@ -265,12 +262,12 @@ const AllData = () => {
       link: "/home/works",
       icon: <FiCodesandbox />,
     },
-    {
-      id: "04",
-      name: "Blogs",
-      link: "/home/blogs",
-      icon: <FaBlogger />,
-    },
+    // {
+    //   id: "04",
+    //   name: "Blogs",
+    //   link: "/home/blogs",
+    //   icon: <FaBlogger />,
+    // },
     {
       id: "05",
       name: "Contact",
@@ -284,31 +281,31 @@ const AllData = () => {
     {
       id: "01",
       name: "About",
-      link: "/homeTwo/about",
+      link: "/about",
       icon: <FaRegUser />,
     },
     {
       id: "02",
       name: "Resume",
-      link: "/homeTwo/resume",
+      link: "/resume",
       icon: <CgNotes />,
     },
     {
       id: "03",
       name: "Works",
-      link: "/homeTwo/works",
+      link: "/works",
       icon: <FiCodesandbox />,
     },
-    {
-      id: "04",
-      name: "Blogs",
-      link: "/homeTwo/blogs",
-      icon: <FaBlogger />,
-    },
+    // {
+    //   id: "04",
+    //   name: "Blogs",
+    //   link: "/homeTwo/blogs",
+    //   icon: <FaBlogger />,
+    // },
     {
       id: "05",
       name: "Contact",
-      link: "/homeTwo/contact",
+      link: "/contact",
       icon: <RiContactsBookLine />,
     },
   ];
@@ -455,32 +452,32 @@ const AllData = () => {
   ];
 
   // Personal information for contact pages
-  const contactArray = [
-    {
-      id: "01",
-      icon: iconPhone,
-      title: "Phone ",
-      item1: "+452 666 386",
-      item2: "+452 666 386",
-      bg: "#FCF4FF",
-    },
-    {
-      id: "02",
-      icon: iconEmail,
-      title: "Email ",
-      item1: "support@gmail.com",
-      item2: "example@gmail.com",
-      bg: "#EEFBFF",
-    },
-    {
-      id: "03",
-      icon: iconMap,
-      title: "Address ",
-      item1: "Maount View, Oval",
-      item2: "Road, New York, USA",
-      bg: "#F2F4FF",
-    },
-  ];
+  // const contactArray = [
+  //   {
+  //     id: "01",
+  //     icon: iconPhone,
+  //     title: "Phone ",
+  //     item1: "+452 666 386",
+  //     item2: "+452 666 386",
+  //     bg: "#FCF4FF",
+  //   },
+  //   {
+  //     id: "02",
+  //     icon: iconEmail,
+  //     title: "Email ",
+  //     item1: "support@gmail.com",
+  //     item2: "example@gmail.com",
+  //     bg: "#EEFBFF",
+  //   },
+  //   {
+  //     id: "03",
+  //     icon: iconMap,
+  //     title: "Address ",
+  //     item1: "Maount View, Oval",
+  //     item2: "Road, New York, USA",
+  //     bg: "#F2F4FF",
+  //   },
+  // ];
 
   return {
     handleTheme,
@@ -503,7 +500,6 @@ const AllData = () => {
     experiencesArray,
     awardsArray,
     lineArray,
-    contactArray,
   };
 };
 

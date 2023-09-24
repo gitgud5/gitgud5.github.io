@@ -1,5 +1,5 @@
 import React from "react";
-import cvFile from "../assets/images/cv.webp";
+import cvFile from "../assets/images/cv.pdf";
 import {
   FaDribbble,
   FaEnvelopeOpenText,
@@ -65,7 +65,7 @@ const HomeCard = () => {
             </a>
             {/* linkedin link add here */}
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/muhammad-umar-42828b219/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -129,7 +129,7 @@ const HomeCard = () => {
               </div>
             </div>
 
-          {/* Nah fuck the birthday */}
+            {/* Nah fuck the birthday */}
             {/* <div className="flex  py-2.5">
               <span className="flex-shrink-0 socialbtn bg-white dark:bg-black text-[#C17CEB] shadow-md">
                 <FaCalendarAlt />

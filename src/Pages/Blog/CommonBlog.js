@@ -191,7 +191,7 @@ const CommonBlog = ({ items, count }) => {
                       </a>
                       {/* linkedin link add here */}
                       <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/in/muhammad-umar-42828b219/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

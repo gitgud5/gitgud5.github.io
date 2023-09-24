@@ -19,7 +19,7 @@ const Header = () => {
         {/* Header menu start  */}
         <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]  ">
           <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
-            <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
+            <div className="flex items-center justify-between w-full my-5 space-x-4 lg:my-8 ">
               <Link className="text-5xl font-semibold" to="/">
                 {/* website logo  */}
 
@@ -33,14 +33,14 @@ const Header = () => {
                     onClick={() => handle("dark")}
                     className="bg-white w-[40px]  opacity-100 visible flex lg:opacity-0 lg:hidden  h-[40px]  rounded-full  justify-center items-center hover:bg-[#ef4060] text-black hover:text-white transition-all duration-300 ease-in-out cursor-pointer  ml-4"
                   >
-                    <FiMoon className="  text-3xl" />
+                    <FiMoon className="text-3xl " />
                   </span>
                 ) : (
                   <span
                     onClick={() => handle("light")}
                     className="bg-[#4D4D4D] w-[40px] h-[40px] rounded-full  opacity-100 visible flex lg:opacity-0 lg:hidden justify-center items-center hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer  ml-4"
                   >
-                    <FiSun className="text-white text-3xl" />
+                    <FiSun className="text-3xl text-white" />
                   </span>
                 )}
 
@@ -82,7 +82,7 @@ const Header = () => {
                 <li
                   onClick={() => setMenuOpen(false)}
                   key={item.id}
-                  className=" "
+                  className=""
                 >
                   <NavLink
                     key={item.id}
@@ -120,14 +120,14 @@ const Header = () => {
                   onClick={() => handle("dark")}
                   className="bg-white w-[40px] hover:text-white hidden  h-[40px] rounded-full lg:flex justify-center items-center text-black hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2 "
                 >
-                  <FiMoon className="  text-3xl" />
+                  <FiMoon className="text-3xl " />
                 </span>
               ) : (
                 <span
                   onClick={() => handle("light")}
                   className="bg-[#4D4D4D] w-[40px] h-[40px] hidden  rounded-full lg:flex justify-center items-center   hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2"
                 >
-                  <FiSun className="text-white text-3xl" />
+                  <FiSun className="text-3xl text-white" />
                 </span>
               )}
             </ul>
