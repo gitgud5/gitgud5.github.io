@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaMobileAlt,
   FaTwitter,
+  FaGithub
 } from "react-icons/fa";
 import img from "../assets/images/about/avatar.png";
 import downloadIcon from "../assets/images/download.png";
@@ -33,7 +34,7 @@ const HomeCard = () => {
           {/* Social Links */}
 
           <div className="flex justify-center space-x-3">
-            {/* facebook link add here */}
+            {/* facebook link here */}
             {/* <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -43,7 +44,7 @@ const HomeCard = () => {
                 <FaFacebookF />
               </span>
             </a> */}
-            {/* twitter link add here */}
+            {/* twitter link here */}
             {/* <a
               href="https://twitter.com/"
               target="_blank"
@@ -53,16 +54,16 @@ const HomeCard = () => {
                 <FaTwitter />
               </span>
             </a> */}
-            {/* drop link add here */}
-            {/* <a
+            {/* github link here */}
+            <a
               href="https://dribbble.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="socialbtn text-[#e14a84] ">
-                <FaDribbble />
+              <span className="socialbtn text-[#171515] dark:text-[#3f4d57] ">
+                <FaGithub />
               </span>
-            </a> */}
+            </a>
             {/* linkedin link add here */}
             <a
               href="https://www.linkedin.com/in/muhammad-umar-42828b219/"
