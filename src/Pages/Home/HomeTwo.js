@@ -29,7 +29,7 @@ const HomeTwo = () => {
             {/* website logo */}
 
             <Link to="/">
-              <img className="h-[26px] lg:h-[65px]" src={logo} alt="logo" />
+              {/* <img className="h-[26px] lg:h-[65px]" src={logo} alt="logo" /> */}
             </Link>
             <div className="flex items-center">
               {/* dark and light mode button */}

@@ -1,26 +1,10 @@
 import { useEffect, useState } from "react";
 // for work_images
-import work1 from "../assets/images/work_images/lumbarfy.png";
-import work2 from "../assets/images/work_images/skillgigs.png";
-// import work3 from "../assets/images/work_images/3.jpg";
+import work1 from "../assets/images/work_images/homie-app.png";
+import work2 from "../assets/images/work_images/trenda.png";
 // works small images
-import workSmall1 from "../assets/images/work_images/small/lumbarfy-small.png";
-import workSmall2 from "../assets/images/work_images/small/skillgigs-small.png";
-// import workSmall3 from "../assets/images/work_images/small/3.jpg";
-// blog post images
-import blog6 from "../assets/images/blog_images/6.jpg";
-import blog4 from "../assets/images/blog_images/4.jpg";
-import blog2 from "../assets/images/blog_images/2.jpg";
-import blog1 from "../assets/images/blog_images/1.jpg";
-import blog3 from "../assets/images/blog_images/3.jpg";
-import blog5 from "../assets/images/blog_images/5.jpg";
-// blog image small
-import blogSmall6 from "../assets/images/blog_images/small/6.jpg";
-import blogSmall4 from "../assets/images/blog_images/small/4.jpg";
-import blogSmall2 from "../assets/images/blog_images/small/2.jpg";
-import blogSmall1 from "../assets/images/blog_images/small/1.jpg";
-import blogSmall3 from "../assets/images/blog_images/small/3.jpg";
-import blogSmall5 from "../assets/images/blog_images/small/5.jpg";
+import workSmall1 from "../assets/images/work_images/small/homie-app-small.png";
+import workSmall2 from "../assets/images/work_images/small/trenda-small.png";
 
 import img1 from "../assets/images/slider/brand-1.png";
 import img2 from "../assets/images/slider/brand-2.png";
@@ -33,9 +17,10 @@ import icon1 from "../assets/images/icons/icon-2.svg";
 import icon2 from "../assets/images/icons/icon-3.svg";
 import icon3 from "../assets/images/icons/icon-4.svg";
 import icon4 from "../assets/images/icons/icon-5.svg";
+import icon5 from "../assets/images/icons/icon-6.svg";
 // contact image
 import { CgNotes } from "react-icons/cg";
-import { FaBlogger, FaRegUser } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { FiCodesandbox } from "react-icons/fi";
 import { RiContactsBookLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
@@ -96,12 +81,6 @@ const AllData = () => {
     setIsOpen(true);
   };
 
-  // find items for Blogs  modal open
-  const handleBlogsData = (id) => {
-    const find = blogsData.find((item) => item?.id === id);
-    setSingleData(find);
-    setIsOpen(true);
-  };
 
   // Active navlinks function
   function NavLink({
@@ -123,30 +102,30 @@ const AllData = () => {
     {
       id: "1",
       tag: "MERN",
-      title: "Lumbarfy",
+      title: "Homie App",
       img: work1,
       imgSmall: workSmall1,
       bg: "#FFF0F0",
-      client: "Comsats University Islamabad",
+      client: "Homie Inc",
       langages: "JavaScript, Python",
       // link: "https://www.envato.com",
-      linkText: "Not live anymore",
+      // linkText: "Not live anymore",
       description:
-        "My final year project. Used to diagnose MRI images of patients and generate them a report.",
+        "",
     },
     {
       id: "2",
       tag: "MERN",
-      title: "SkillGigs",
+      title: "Trenda",
       img: work2,
       imgSmall: workSmall2,
       bg: "#FFF3FC",
-      client: "GlobeWyze Inc.",
+      client: "Trenda Inc",
       langages: "JavaScript",
-      link: "https://skillgigs.com/",
-      linkText: "Skillgigs link",
+      // link: "https://skillgigs.com/",
+      // linkText: "Skillgigs link",
       description:
-        "Worked as a maintainer of the web application for both the front-end and the back-end.",
+        "",
     },
     // {
     //   id: "3",
@@ -165,75 +144,6 @@ const AllData = () => {
   ];
   const [data, setData] = useState(workItems);
 
-  // Elements for Blogs section
-  const blogsData = [
-    {
-      id: "1",
-      img: blog1,
-      imgSmall: blogSmall1,
-      date: "177 April",
-      category: "Inspiration",
-      title: "How to Own Your Audience by Creating an Email List.",
-      bg: "#FCF4FF",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-    {
-      id: "4",
-      img: blog4,
-      imgSmall: blogSmall4,
-      date: "000 April",
-      category: "Inspiration",
-      title: "Everything You Need to Know About Web Accessibility.",
-      bg: "#EEFBFF",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-    {
-      id: "2",
-      img: blog2,
-      imgSmall: blogSmall2,
-      date: "21 April",
-      category: "Web Design",
-      title: "The window know to say beside you",
-      bg: "#FFF0F0",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-    {
-      id: "5",
-      img: blog5,
-      imgSmall: blogSmall5,
-      date: "27 April",
-      category: "Inspiration",
-      title: "Top 10 Toolkits for Deep Learning in 2021.",
-      bg: "#FCF4FF",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-    {
-      id: "3",
-      img: blog3,
-      imgSmall: blogSmall3,
-      date: "27 April",
-      category: "Inspiration",
-      title: "How to Own Your Audience by Creating an Email List.",
-      bg: "#FCF4FF",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-    {
-      id: "6",
-      img: blog6,
-      imgSmall: blogSmall6,
-      date: "27 April",
-      category: "Inspiration",
-      title: "Everything You Need to Know About Web Accessibility.",
-      bg: "#EEFBFF",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consetur quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur. \n Lorem ipsum dolor, sit amet consectetur adipisicing  elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non. ",
-    },
-  ];
 
   // Menu items for Homepage Two
   const menuItemTwo = [
@@ -255,14 +165,8 @@ const AllData = () => {
       link: "/works",
       icon: <FiCodesandbox />,
     },
-    // {
-    //   id: "04",
-    //   name: "Blogs",
-    //   link: "/homeTwo/blogs",
-    //   icon: <FaBlogger />,
-    // },
     {
-      id: "05",
+      id: "04",
       name: "Contact",
       link: "/contact",
       icon: <RiContactsBookLine />,
@@ -287,6 +191,14 @@ const AllData = () => {
   const serviceArray = [
     {
       id: "1",
+      icon: icon5,
+      title: "QA Automation",
+      des: "Expertise in designing, implementing, and maintaining robust automated testing solutions to ensure software quality and streamline QA processes.",
+      color: "#8774FF",
+      bg: "#FCF4FF",
+    },
+    {
+      id: "2",
       icon: icon,
       title: "Frontend Development",
       des: "Building dynamic, responsive web applications from scratch and enhance existing apps.",
@@ -294,7 +206,7 @@ const AllData = () => {
       bg: "#FCF4FF",
     },
     {
-      id: "2",
+      id: "3",
       icon: icon1,
       title: "Backend Development",
       des: "Developing robust server-side applications using Node.js and Express.js. Designing and implementing RESTful or GraphQL APIs.",
@@ -302,7 +214,7 @@ const AllData = () => {
       bg: "#FEFAF0",
     },
     {
-      id: "3",
+      id: "4",
       icon: icon2,
       title: "Database Management",
       des: "Setting up and managing databases, including MongoDB, MySQL, or PostgreSQL. Designing efficient database schemas and optimizing queries.",
@@ -310,7 +222,7 @@ const AllData = () => {
       bg: "#FCF4FF",
     },
     {
-      id: "4",
+      id: "5",
       icon: icon3,
       title: "Authentication and Authorization",
       des: "Implementing user authentication systems using OAuth, JWT, or other methods. Configuring role-based access control (RBAC) for user permissions.",
@@ -318,7 +230,7 @@ const AllData = () => {
       bg: "#FFF4F4",
     },
     {
-      id: "5",
+      id: "6",
       icon: icon4,
       title: "API Integration",
       des: "Connecting to third-party APIs to fetch and display data within web applications. Developing custom APIs for clients or partners.",
@@ -331,7 +243,7 @@ const AllData = () => {
   const educationArray = [
     {
       id: 1,
-      date: "2018-2022",
+      date: "2015-2019",
       title: "Bachelor of Science in Computer Science",
       place: "COMSATS University Islamabad (CUI)",
       bg: "#FFF4F4",
@@ -342,16 +254,16 @@ const AllData = () => {
   const experiencesArray = [
     {
       id: 1,
-      date: "March 2023 - July 2023",
-      title: "MERN Stack Developer",
-      place: "Globewyze Inc.",
+      date: "Jan 2021 - Current",
+      title: "Full Stack Engineer",
+      place: "Al Burraq Technology - Pakistan",
       bg: "#F2F4FF",
     },
     {
       id: 2,
       date: "September 2023 - Present",
-      title: "Assosiate Software Engineer",
-      place: "Volmatica Inc.",
+      title: "Sr. Full Stack Engineer",
+      place: "Work Tech - Pakistan",
       bg: "#EEF5FA",
     },
   ];
@@ -361,26 +273,26 @@ const AllData = () => {
     {
       id: "01",
       color: "#FF6464",
-      name: "JavaScript",
+      name: "Cypress",
       number: "90",
     },
     {
       id: "02",
       color: "#9272D4",
-      name: "MERN",
+      name: "Playwright",
       number: "80",
     },
     {
       id: "03",
       color: "#5185D4",
-      name: "TailwindCSS",
-      number: "75",
+      name: "VueJS",
+      number: "80",
     },
     {
       id: "03",
       color: "#CA56F2",
-      name: "DataBase",
-      number: "70",
+      name: "Laravel",
+      number: "80",
     },
   ];
 
@@ -395,8 +307,8 @@ const AllData = () => {
     handleModelData,
     isOpen,
     setIsOpen,
-    blogsData,
-    handleBlogsData,
+    // blogsData,
+    // handleBlogsData,
     NavLink,
     menuItemTwo,
     serviceArray,

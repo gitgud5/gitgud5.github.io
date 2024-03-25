@@ -145,7 +145,7 @@ const CommonPortfilo = ({ condition, items }) => {
                       </p>
                       <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
                         <FiCode className="hidden mr-2 text-lg sm:block " />
-                        Langages :&nbsp;
+                        Languages :&nbsp;
                         <span className="font-medium ">
                           {singleData?.langages}
                         </span>
