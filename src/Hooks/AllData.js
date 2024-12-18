@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 // for work_images
 import work1 from "../assets/images/work_images/lumbarfy.png";
 import work2 from "../assets/images/work_images/skillgigs.png";
+import work3 from "../assets/images/work_images/caesar-big.png"
 // import work3 from "../assets/images/work_images/3.jpg";
 // works small images
 import workSmall1 from "../assets/images/work_images/small/lumbarfy-small.png";
 import workSmall2 from "../assets/images/work_images/small/skillgigs-small.png";
+import workSmall3 from "../assets/images/work_images/small/caesar-small.png"
 // import workSmall3 from "../assets/images/work_images/small/3.jpg";
 // blog post images
 import blog6 from "../assets/images/blog_images/6.jpg";
@@ -136,6 +138,20 @@ const AllData = () => {
     },
     {
       id: "2",
+      tag: "NodeJS package",
+      title: "Caesar Crypt",
+      img: work3,
+      imgSmall: workSmall3,
+      bg: "#FFF3FC",
+      client: "GlobeWyze Inc.",
+      langages: "Typescript, JavaScript",
+      link: "https://www.npmjs.com/package/caesar-crypt",
+      linkText: "NPM Package Link",
+      description:
+        "Developed an encyption algorith using caesar's algorithm, and fixing issues and maintaining it as need arises actively.",
+    },
+    {
+      id: "3",
       tag: "MERN",
       title: "SkillGigs",
       img: work2,
@@ -342,18 +358,39 @@ const AllData = () => {
   const experiencesArray = [
     {
       id: 1,
-      date: "March 2023 - July 2023",
-      title: "MERN Stack Developer",
-      place: "Globewyze Inc.",
+      date: "April 2021 - September 2022",
+      title: "MERN Stack Developer Mentorship",
+      place: "BitSol Technologies",
       bg: "#F2F4FF",
     },
     {
       id: 2,
-      date: "September 2023 - Present",
-      title: "Assosiate Software Engineer",
+      date: "September 2022 - March 2023",
+      title: "MERN Stack developer",
+      place: "BitSol Technologies",
+      bg: "#F2F4FF",
+    },
+    {
+      id: 3,
+      date: "March 2023 - July 2023 ",
+      title: "Frontend Developer",
+      place: "Globewyze Inc.",
+      bg: "#F2F4FF",
+    },
+    {
+      id: 4,
+      date: "July 2023 - Februray 2024",
+      title: "Full Stack Developer",
       place: "Volmatica Inc.",
       bg: "#EEF5FA",
     },
+    {
+      id: 5,
+      date: "February 2024 - November 2024",
+      title: "Backend Developer",
+      place: "Doaz Inc.",
+      bg: "#EEF5FA",
+    }
   ];
 
   // Working Skills items for Resume page
@@ -380,7 +417,7 @@ const AllData = () => {
       id: "03",
       color: "#CA56F2",
       name: "DataBase",
-      number: "70",
+      number: "85",
     },
   ];
 
