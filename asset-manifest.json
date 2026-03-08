@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9dbf74df.css",
-    "main.js": "/static/js/main.16e4e602.js",
+    "main.js": "/static/js/main.b5232824.js",
     "static/media/logo.png": "/static/media/logo.da04c5ba43b46b5bb750.png",
     "static/media/bg.jpg": "/static/media/bg.81778ea0f6306193ac44.jpg",
     "static/media/skillgigs.png": "/static/media/skillgigs.f31c1275de6ada82983c.png",
@@ -10,7 +10,7 @@
     "static/media/lumbarfy.png": "/static/media/lumbarfy.e9ea2f72e3d1f26e4813.png",
     "static/media/bg-dark.jpg": "/static/media/bg-dark.8fb39b45ee55aa5d341e.jpg",
     "static/media/skillgigs-small.png": "/static/media/skillgigs-small.a4e07d943032e982f1a5.png",
-    "static/media/cv.pdf": "/static/media/cv.299a798cfd0e5e177895.pdf",
+    "static/media/cv.pdf": "/static/media/cv.136ed6dfb4f79cbcb2ac.pdf",
     "static/media/caesar-big.png": "/static/media/caesar-big.179c9206ae3afab5d345.png",
     "static/media/lumbarfy-small.png": "/static/media/lumbarfy-small.cf59a7ac4b6fcc64acd9.png",
     "static/media/caesar-small.png": "/static/media/caesar-small.6a5246676d987e5fbd2e.png",
@@ -21,10 +21,10 @@
     "static/media/icon-3.svg": "/static/media/icon-3.fdad60c61dbd06fc9f40447af733556b.svg",
     "index.html": "/index.html",
     "main.9dbf74df.css.map": "/static/css/main.9dbf74df.css.map",
-    "main.16e4e602.js.map": "/static/js/main.16e4e602.js.map"
+    "main.b5232824.js.map": "/static/js/main.b5232824.js.map"
   },
   "entrypoints": [
     "static/css/main.9dbf74df.css",
-    "static/js/main.16e4e602.js"
+    "static/js/main.b5232824.js"
   ]
 }
